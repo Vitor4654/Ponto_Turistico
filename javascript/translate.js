@@ -1,0 +1,33 @@
+function traduzirParaIngles() {
+  var paragrafo = document.querySelector('.geral');
+  var texto = paragrafo.innerText;
+  
+  
+  var traducao = {
+    'O Teatro Amazonas é um dos mais importantes teatros do Brasil e o principal cartão-postal da cidade de Manaus. Localizado no Largo de São Sebastião, no Centro Histórico, foi inaugurado em 1896 para atender ao desejo da elite amazonense da época, que idealizava a cidade à altura dos grandes centros culturais. É amplamente considerado como um dos mais belos teatros do mundo. De estilo renascentista entorno de sua estrutura externa com os detalhes únicos na sua cúpula, tornou-se um dos monumentos mais conhecidos do Brasil e, consequentemente, o maior símbolo cultural de Manaus, e uma das expressões arquitetônicas responsáveis pela fama da cidade de Paris dos Trópicos. Por ser uma obra singular no país e representar o apogeu de Manaus durante o ciclo da borracha, foi tombado como Patrimônio Histórico Nacional pelo IPHAN em 1966. Está localizado mais precisamente na Avenida Eduardo Ribeiro e recebe cerca de 288 mil visitantes ao ano. Com uma decoração muito nobre, o Teatro Amazonas já foi palco não somente de grandes peças teatrais, mas também de shows internacionais como o da banda The White Stripes. Desde 1997, o Festival Amazonas de Ópera é realizado no teatro. Em 2008, o teatro foi eleito uma das sete maravilhas brasileiras em dois concursos promovidos pela Revista Caras em parceria com o banco HSBC e outro pelo escritório de design Goff. Em 2014, o TripAdvisor, considerado o maior site de viagens do mundo, elegeu o Teatro Amazonas a terceira melhor atração turística do Brasil.'
+    : 'Teatro Amazonas is one of the most important theaters in Brazil and the main postcard of the city of Manaus. Located in Largo de São Sebastião, in the Historic Center, it was inaugurated in 1896 to meet the desire of the Amazonian elite at the time, who idealized the city to be on par with the great cultural centers. It is widely regarded as one of the most beautiful theaters in the world. With a Renaissance style surrounding its external structure with unique details on its dome, it became one of the best-known monuments in Brazil and, consequently, the greatest cultural symbol of Manaus, and one of the architectural expressions responsible for the fame of the city of Paris in the 20th century. Tropics. As it is a unique work in the country and represents the heyday of Manaus during the rubber boom, it was listed as a National Historic Landmark by IPHAN in 1966. It is located more precisely on Avenida Eduardo Ribeiro and receives around 288,000 visitors a year. With a very noble decoration, the Teatro Amazonas has been the stage not only of great theater plays, but also of international concerts such as the band The White Stripes. Since 1997, the Amazonas Opera Festival has been held in the theater. In 2008, the theater was elected one of the seven Brazilian wonders in two contests promoted by Revista Caras in partnership with HSBC bank and another by the design office Goff. In 2014, TripAdvisor, considered the largest travel site in the world, elected Teatro Amazonas the third best tourist attraction in Brazil.',
+  };
+  
+  for (var palavra in traducao) {
+    texto = texto.replace(new RegExp(palavra, 'gi'), traducao[palavra]);
+  }
+  
+  paragrafo.innerText = texto;
+}
+
+function traduzirParaPortugues() {
+  var paragrafo = document.querySelector('.geral');
+  var texto = paragrafo.innerText;
+  
+  
+  var traducao = {
+      'Teatro Amazonas is one of the most important theaters in Brazil and the main postcard of the city of Manaus. Located in Largo de São Sebastião, in the Historic Center, it was inaugurated in 1896 to meet the desire of the Amazonian elite at the time, who idealized the city to be on par with the great cultural centers. It is widely regarded as one of the most beautiful theaters in the world. With a Renaissance style surrounding its external structure with unique details on its dome, it became one of the best-known monuments in Brazil and, consequently, the greatest cultural symbol of Manaus, and one of the architectural expressions responsible for the fame of the city of Paris in the 20th century. Tropics. As it is a unique work in the country and represents the heyday of Manaus during the rubber boom, it was listed as a National Historic Landmark by IPHAN in 1966. It is located more precisely on Avenida Eduardo Ribeiro and receives around 288,000 visitors a year. With a very noble decoration, the Teatro Amazonas has been the stage not only of great theater plays, but also of international concerts such as the band The White Stripes. Since 1997, the Amazonas Opera Festival has been held in the theater. In 2008, the theater was elected one of the seven Brazilian wonders in two contests promoted by Revista Caras in partnership with HSBC bank and another by the design office Goff. In 2014, TripAdvisor, considered the largest travel site in the world, elected Teatro Amazonas the third best tourist attraction in Brazil.'
+      : 'O Teatro Amazonas é um dos mais importantes teatros do Brasil e o principal cartão-postal da cidade de Manaus. Localizado no Largo de São Sebastião, no Centro Histórico, foi inaugurado em 1896 para atender ao desejo da elite amazonense da época, que idealizava a cidade à altura dos grandes centros culturais. É amplamente considerado como um dos mais belos teatros do mundo. De estilo renascentista entorno de sua estrutura externa com os detalhes únicos na sua cúpula, tornou-se um dos monumentos mais conhecidos do Brasil e, consequentemente, o maior símbolo cultural de Manaus, e uma das expressões arquitetônicas responsáveis pela fama da cidade de Paris dos Trópicos. Por ser uma obra singular no país e representar o apogeu de Manaus durante o ciclo da borracha, foi tombado como Patrimônio Histórico Nacional pelo IPHAN em 1966. Está localizado mais precisamente na Avenida Eduardo Ribeiro e recebe cerca de 288 mil visitantes ao ano. Com uma decoração muito nobre, o Teatro Amazonas já foi palco não somente de grandes peças teatrais, mas também de shows internacionais como o da banda The White Stripes. Desde 1997, o Festival Amazonas de Ópera é realizado no teatro. Em 2008, o teatro foi eleito uma das sete maravilhas brasileiras em dois concursos promovidos pela Revista Caras em parceria com o banco HSBC e outro pelo escritório de design Goff. Em 2014, o TripAdvisor, considerado o maior site de viagens do mundo, elegeu o Teatro Amazonas a terceira melhor atração turística do Brasil.',
+  };
+  
+  for (var palavra in traducao) {
+    texto = texto.replace(new RegExp(palavra, 'gi'), traducao[palavra]);
+  }
+  
+  paragrafo.innerText = texto;
+}
